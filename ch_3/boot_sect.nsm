@@ -1,0 +1,11 @@
+;
+; Simple loop boot sector
+;
+
+loop:                 ; Define a label to jump back to.
+
+jmp loop              ; Jump back to loop label
+
+times 510-($-$$) db 0 ; Fill in 510 bytes less existing byte count.
+
+dw 0xaa55             ; Last two bytes to signify boot sector.

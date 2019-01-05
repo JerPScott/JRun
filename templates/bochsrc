@@ -1,0 +1,3 @@
+# Boot as if file is a floppy disc at boot time
+floppya: 1_44=boot_sect, status=inserted
+boot: a

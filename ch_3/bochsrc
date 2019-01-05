@@ -1,0 +1,4 @@
+# Boot as if file is a floppy disc at boot time
+#display_library: x, options="gui_debug"
+floppya: 1_44=boot_sect_print.bin, status=inserted
+boot: a
