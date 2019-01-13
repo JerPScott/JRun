@@ -1,4 +1,1 @@
-19
-
-something is going wrong with the lodsb call.
-0x00 si always being loaded into al so print loop is breaking.
+23

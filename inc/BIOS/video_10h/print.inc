@@ -9,6 +9,8 @@
 ;        to screen in tty mode.
 ;
 
+%ifndef BIOS_video10h_print
+%define BIOS_video10h_print
 ; Jump to end to avoid calling code on include.
 jmp BIOS_video10h_print_file_end
 
@@ -66,3 +68,4 @@ print_char:
   ret               ; Return to caller.
 
 BIOS_video10h_print_file_end:
+%endif ; BIOS_video10h_print

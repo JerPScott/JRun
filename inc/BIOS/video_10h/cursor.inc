@@ -5,6 +5,10 @@
 ;        to get and manipulate cursor information.
 ;
 
+%ifndef BIOS_video10h_cursor
+%define BIOS_video10h_cursor
+jmp BIOS_video10h_cursor_file_end
+
 ;
 ; @desc Setup for setting cursor position with BIOS int 0x10.
 ;
@@ -44,3 +48,5 @@ new_line:
   popa
   ret
 
+BIOS_video10h_cursor_file_end:
+%endif ; BIOS_video10h_cursor
