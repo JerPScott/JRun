@@ -4,6 +4,8 @@
 [org 0x7c00]              ; Tell assembler the load location.
 [bits 16]                 ; Real Mode
 
+call clear_screen         ; Clear the screen to start.
+
 mov bx, HELLO_MSG         ; Load BX for function call.
 call print_string         ; Call register safe string print.
 

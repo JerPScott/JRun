@@ -48,5 +48,15 @@ new_line:
   popa
   ret
 
+;
+; @desc Clear the screen and set colors
+;
+clear_screen:
+  pusha
+  mov ax, 0x0000    ; Set to clear screen
+  int 0x10
+  popa
+  ret
+
 BIOS_video10h_cursor_file_end:
 %endif ; BIOS_video10h_cursor
